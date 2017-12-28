@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <!--angular and multiple-selection-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script type="text/javascript" src="AngularScripts/multiple-selection.min.js"></script>
+
+
+    <!--css-->
+    <link href="css/airingMultiselect.css" rel="stylesheet" />
+
+
+    <!--including module and controller js-->
+    <script src="scripts/app.module.js"></script>
+    <script src="scripts/AiringMultiselectController.js"></script>
+
+
+    <!--bootstrap links-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="airingMultiselectController">
+        <div class="row">
+            <div class="col-lg-3" multiple-selection-zone style="height: 1000px">
+                <div class="sidebar">
+                    <div class="box1" multiple-selection-item ng-class="{'selected': isSelected}"><label>7:00-8:00am</label></div>
+                    <div class="box3" multiple-selection-item ng-class="{'selected': isSelected}"><label>8:00-8:15am</label></div>
+                    <div class="box5" multiple-selection-item ng-class="{'selected': isSelected}"><label>9:30-11:00am</label></div>
+                    <div class="box7" multiple-selection-item ng-class="{'selected': isSelected}"><label>9:45-10:45am</label></div>
+
+                </div>
+            </div>
+            <div class="col-lg-3" style="height: 1000px">
+                <div class="sidebar">
+
+                    <div class="box2"  ng-class="{'selected': isSelected}"><label>7:45-8:00am</label></div>
+                    <div class="box4" ng-class="{'selected': isSelected}"><label>8:00-9:30am</label></div>
+
+                    <div class="box6" ng-class="{'selected': isSelected}"><label>9:30-9:45am</label></div>
+                    <div class="box8" ng-class="{'selected': isSelected}"><label>9:45-10:30am</label></div>
+                </div>
+            </div>
+            <div class="col-lg-3" multiple-selection-zone style="height: 1000px">
+                <div class="sidebar">
+
+                    <div class="box1" multiple-selection-item ng-class="{'selected': isSelected}"><label>7:00-8:00am</label></div>
+                    <div class="box3" multiple-selection-item ng-class="{'selected': isSelected}"><label>8:00-8:15am</label></div>
+                    <div class="box5" multiple-selection-item ng-class="{'selected': isSelected}"><label>9:30-11:00am</label></div>
+                    <div class="box7" multiple-selection-item ng-class="{'selected': isSelected}"><label>9:45-10:45am</label></div>
+                </div>
+            </div>
+            <div class="col-lg-3" multiple-selection-zone style="height: 1000px">
+                <div class="sidebar">
+
+                    <div class="box2" multiple-selection-item ><label>7:45-8:00am</label></div>
+                    <div class="box4" multiple-selection-item ><label>8:00-9:30am</label></div>
+
+                    <div class="box6" multiple-selection-item ><label>9:30-9:45am</label></div>
+                    <div class="box8" multiple-selection-item ><label>9:45-10:30am</label></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+﻿<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular.min.js"></script>
+    <script type="text/javascript">
+        var app = angular.module('MyApp', [])
+        app.controller('MyController', function ($scope) {
+            //This will hide the DIV by default.
+            $scope.IsHidden = false;
+            $scope.isSelected = false;
+            $scope.ShowHide = function () {
+                //If DIV is hidden it will be visible and vice versa.
+                $scope.IsHidden = $scope.IsHidden ? false : true;
+                //$scope.isSelected = true;
+
+                if ($scope.IsHidden==true) {
+                    $scope.isSelected = true;
+                } else {
+                    $scope.isSelected = false;
+                }
+            }
+          
+           
+           
+        });
+    </script>
+
+
+    
+    <style>
+        .box1 {
+            background-color:lightgoldenrodyellow;
+            width:90%;
+            height:100px;float: left;
+            margin-left: 30px;
+            padding:4px;
+            border: 2px solid black;
+        }
+         .box2 {
+            background-color:lightgoldenrodyellow;
+            width:90%;
+            height:100px;float: left;
+            margin-left: 30px;
+            padding:4px;
+            border: 2px solid black;
+            /*overflow:auto;*/
+            /*display: flex;*/
+            height: 50%;
+        }
+        .box2exp {
+               height: calc(50% + 200px);
+        }
+    </style>
+
+
+    <div ng-app="MyApp" ng-controller="MyController">
+
+        <div ng-hide="IsHidden" class="box1">top div
+            </div>
+        <input type="button" value="Show Hide DIV" ng-click="ShowHide()"/>
+
+        <div class="box2" ng-class="{'box2exp': isSelected}" id="boxheight">bottom div</div>
+   
+    </div>
+</body>
+</html>

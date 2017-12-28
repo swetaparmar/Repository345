@@ -1,0 +1,113 @@
+﻿.selected {
+    background-color: lightskyblue !important;
+}
+.selecting {
+    background-color: yellow !important;
+}
+.select-helper {
+    position: absolute;
+    border: 1px dashed red;
+    background: blue;
+    opacity: 0.2;
+}
+ .sidebar {
+    margin: 10px;
+    padding: 10px 7px 10px 7px;
+    width:70%;
+  height:100%;
+    border: 2px solid black;
+   
+
+
+}
+
+.box1 {
+     background-color:lightgoldenrodyellow;
+     width:125px; 
+    height:100px;float: left;
+    margin-left: 30px;
+    padding:4px;
+      border: 2px solid black;
+}
+
+.box2 {    
+      background-color:lightgoldenrodyellow;
+     margin-left: 30px;
+     margin-top: 75px;
+     height:25px;
+     width:125px; 
+     float: left;
+    padding:4px;
+       border: 2px solid black;
+
+}
+
+.box3 {    
+     background-color:lightgoldenrodyellow;
+    width:125px;  
+    height:25px;
+    float: left;
+    height:25px;
+    margin-left: 30px;
+     margin-top: 10px;
+    padding:4px;
+       border: 2px solid black;
+
+}
+.box4 {    
+      background-color:lightgoldenrodyellow;
+     margin-left: 30px;
+       margin-top: 10px;
+     height:150px;
+        width:125px;  
+     float: left;
+      padding:5px;
+       border: 2px solid black;
+}
+.box5 {    
+    background-color:lightgoldenrodyellow;
+     width:125px; 
+    height:25px;
+    float: left;
+    height:150px;
+    margin-left: 30px;
+     margin-top: 10px;
+     padding:4px;
+       border: 2px solid black;
+
+}
+.box6 {    
+      background-color:lightgoldenrodyellow;
+     margin-left: 30px;
+     margin-top: 135px;
+     height:25px;
+       width:125px; 
+     float: left;
+     padding:4px;
+       border: 2px solid black;
+
+}
+.box7 {    
+    background-color:lightgoldenrodyellow;
+   width:125px; 
+
+    float: left;
+    height:100px;
+    margin-left: 30px;
+     margin-top: 10px;
+    padding:4px;
+       border: 2px solid black;
+
+}
+.box8 {    
+    background-color:lightgoldenrodyellow;
+    width:125px; 
+    height:75px;
+    float: left;
+
+    margin-left: 30px;
+     margin-top: 10px;
+     padding:4px;
+       border: 2px solid black;
+
+}
